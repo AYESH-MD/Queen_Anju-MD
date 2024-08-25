@@ -25,6 +25,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         }
 
         const movieInfo = `
+
+
+             *CYBER-X-MD-MOVIE-INFO*
+        
 🎬 *Movie Information* 🎬
 
 🎥 *Title:* ${data.Title}
@@ -50,7 +54,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         // Send the movie information along with the poster image
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> QUEEN ANJU-MD`
+            caption: `${movieInfo}\n> ᴩᴏᴡᴇʀᴅ ʙʏ ᴄʏʙᴇʀ-x-ʙᴏᴛ`
         }, { quoted: mek });
     } catch (e) {
         console.log(e);
