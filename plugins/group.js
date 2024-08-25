@@ -18,7 +18,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         if (!user) return reply('Please tag or reply to a user to promote.')
 
         await conn.groupParticipantsUpdate(from, [user], 'promote')
-        await reply(`@${user.split('@')[0]} has been promoted to admin.`, { mentions: [user] })
+        await reply(`@${user.split('@')[0]} has been promoted by  *ᴄʏʙᴇʀ-x-ʙᴏᴛ*.`, { mentions: [user] })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
@@ -42,7 +42,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         if (!user) return reply('Please tag or reply to a user to demote.')
 
         await conn.groupParticipantsUpdate(from, [user], 'demote')
-        await reply(`@${user.split('@')[0]} has been demoted to member.`, { mentions: [user] })
+        await reply(`@${user.split('@')[0]} has been demoted by *ᴄʏʙᴇʀ-x-ʙᴏᴛ*.`, { mentions: [user] })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
@@ -65,7 +65,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         if (!user) return reply('Please tag or reply to a user to remove.')
 
         await conn.groupParticipantsUpdate(from, [user], 'remove')
-        await reply(`@${user.split('@')[0]} has been removed from the group.`, { mentions: [user] })
+        await reply(`@${user.split('@')[0]} has been removed by *ᴄʏʙᴇʀ-x-ʙᴏᴛ*.`, { mentions: [user] })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
@@ -89,7 +89,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         if (!user) return reply('Please provide a phone number to add.')
 
         await conn.groupParticipantsUpdate(from, [`${user}@s.whatsapp.net`], 'add')
-        await reply(`@${user} has been added to the group.`, { mentions: [`${user}@s.whatsapp.net`] })
+        await reply(`@${user} has been added by *ᴄʏʙᴇʀ-x-ʙᴏᴛ*.`, { mentions: [`${user}@s.whatsapp.net`] })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
@@ -156,7 +156,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         if (!isGroup) return reply('This command can only be used in a group.')
 
         const groupPic = await conn.getProfilePicture(from)
-        await conn.sendMessage(from, { image: { url: groupPic }, caption: 'Group Profile Picture' })
+        await conn.sendMessage(from, { image: { url: groupPic }, caption: 'Group Profile Picture by *ᴄʏʙᴇʀ-x-ʙᴏᴛ*' })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
