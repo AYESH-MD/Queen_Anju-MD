@@ -19,7 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94717775628']
+const ownerNumber = ['94775341543']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("Queen_Anju Session downloaded ✅")
+console.log("cyber-x Session downloaded ✅")
 })})}
 
 const express = require("express");
@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting Queen_Anju 🧬...");
+console.log("Connecting cyber-x 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -70,21 +70,21 @@ console.log('Plugins installed successful ✅')
 console.log('Queen_Anju connected to whatsapp ✅')
 
 let up = `
-🚀 **Queen_Anju MD Connected Successfully!** ✅ 
+🚀 **ᴄʏʙᴇʀ-x-ʙᴏᴛ Connected Successfully!** ✅ 
 
---- **🎉 Welcome to Queen_Anju MD!** 🎉 
+--- **🎉 Welcome to ᴄʏʙᴇʀ-x-ʙᴏᴛ** 🎉 
 
 **🔹 PREFIX:** ${prefix}
 
 **🔹 OWNER:**  ${ownerNumber}
 
---- Thank you for using **Queen_Anju MD**. 
+--- Thank you for using **ᴄʏʙᴇʀ-x-ʙᴏᴛ**. 
 We're here to make your experience enjoyable and seamless. 
 If you need any help or have questions, don't hesitate to ask. 
 
 **Enjoy your time with us!** 😊 `;
 
-conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/adc46970456c26cad0c15.jpg` }, caption: up })
+conn.sendMessage(config.BOT_NUMBER + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/aad924f205b98aac766f3.jpg` }, caption: up })
 
 }
 })
@@ -188,7 +188,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey I am alive, Queen_Anju Is started✅");
+res.send("cyber-x started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
