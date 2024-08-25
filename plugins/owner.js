@@ -12,7 +12,7 @@ cmd({
 },
 async (conn, mek, m, { from, isOwner, reply }) => {
     if (!isOwner) return reply("❌ You are not the owner!");
-    reply("🛑 Shutting down...").then(() => process.exit());
+    reply("ᴄʏʙᴇʀ-x-ʙᴏᴛ Shutting down...").then(() => process.exit());
 });
 
 // 2. Broadcast Message to All Groups
