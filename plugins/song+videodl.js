@@ -17,9 +17,10 @@ const url = data.url
     
     
 let desc = `
-⫷⦁[ * '-'_꩜ 𝙌𝙐𝙀𝙀𝙉 𝘼𝙉𝙅𝙐 𝙎𝙊𝙉𝙂 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙀𝙍 ꩜_'-' * ]⦁⫸
 
-🎵 *Song Found!* 
+           *CYBER-X-SONG-DOWNLOADER*
+
+ 
 
 ➥ *Title:* ${data.title} 
 ➥ *Duration:* ${data.timestamp} 
@@ -27,12 +28,8 @@ let desc = `
 ➥ *Uploaded On:* ${data.ago} 
 ➥ *Link:* ${data.url} 
 
-🎧 *Enjoy the music brought to you by* *Queen Anju Bot*! 
 
-> *Created with ❤️ by Janith Rashmika* 
-
-> *© 𝙌𝙐𝙀𝙀𝙉 𝘼𝙉𝙅𝙐 𝘽𝙊𝙏 - MD* 
-*💻 GitHub:* github.com/Mrrashmika/Queen_Anju-MD  
+> ᴩᴏᴡᴇʀᴅ ʙʏ ᴄʏʙᴇʀ-x-ʙᴏᴛ  
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
