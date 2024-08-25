@@ -13,12 +13,15 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 let status = `
-🏷️ SYSTEM STATUS
+*ᴄʏʙᴇʀ-x-ʙᴏᴛ*
 
 🔄 UPTIME: ${runtime(process.uptime())}
 🔋 RAM USAGE: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 💻 HOST NAME: ${os.hostname()}
-👑 BOT OWNER: Janith Rashmika
+👑 BOT OWNER: CYBER-X-AYESH
+
+
+> ᴩᴏᴡᴇʀᴅ ʙʏ ᴄʏʙᴇʀ-x-ʙᴏᴛ
 `
 return reply(`${status}`)
 }catch(e){
